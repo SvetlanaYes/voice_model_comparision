@@ -1,4 +1,4 @@
-﻿# voice_model_comporision
+﻿# voice_model_comparision
  
  model_1: stt_en_quartznet15x5
  
