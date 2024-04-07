@@ -13,6 +13,15 @@ As the stt_en_fastconformer_ctc_large model employs a Transformer-based architec
 
 [video] https://drive.google.com/file/d/1Q08v6Ss_QQl3xX6VA28RVvjx6fJ0qtRP/view?usp=drive_link
 
+In this example we can see that Fastconformer understands the context and generates terrorist not terrace.
+![image](https://github.com/SvetlanaYes/voice_model_comporision/assets/91842237/f5452cd9-8243-4bde-84e4-e2ca9cbfb517)
+
+In many examples quartznet has problem with separating words in audio, for example
+![image](https://github.com/SvetlanaYes/voice_model_comporision/assets/91842237/566d3a00-2079-4d9b-8006-592d417810c0)
+
+In this example, both models perform well, and both spellings are correct. However, the issue with Word Error Rate (WER) is that it doesn't take into account words that can be written in different forms.
+![image](https://github.com/SvetlanaYes/voice_model_comporision/assets/91842237/bd7f2ad1-4006-4e84-88ec-91dd6c757c6b)
+
 
 For words that occur fewer than 5 times in the training dataset, the count of instances where the accuracy of model_1 is less than 90 and the accuracy of model_2 is greater than 90 is 85. Conversely, in the reverse scenario where the accuracy of model_1 is greater than 90 and the accuracy of model_2 is less than 90, the count of instances is 16. This suggests that for rarely occurring words, the FastConformer model performs better.
 
